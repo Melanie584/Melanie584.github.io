@@ -1,0 +1,28 @@
+---
+title: "Resume"
+format: html
+---
+
+# Melanie Maldonado
+
+## Education
+Bachelor of Science in Computer Science  
+Brigham Young University–Idaho
+
+## Skills
+- Python
+- Polars
+- Data Analysis
+- Machine Learning (basic)
+- Web Development (HTML, CSS, JavaScript)
+
+## Projects
+- DS 250 Data Projects
+- Web-based game project using Phaser
+
+## Experience
+Worked on multiple data science and web development projects, focusing on data cleaning, visualization, and basic machine learning techniques
+
+## Contact
+Email: your-email@example.com
+GitHub: https://github.com/melanie584
