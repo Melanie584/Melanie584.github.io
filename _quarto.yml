@@ -25,6 +25,8 @@ website:
         file: index.qmd
       - text: "DS250 Projects"
         file: 250_projects.qmd
+      - text: "Resume"
+        href: resume.qmd
 
   sidebar:
     - title: "DS 250 Projects"
@@ -43,6 +45,8 @@ website:
         - text: "Project 5"
           file: 250_Projects/project5.qmd
         - text: "---"
+
+        
 
 format:  
   html:
