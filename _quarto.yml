@@ -5,8 +5,8 @@ website:
   title: "Melanie Maldonado - Data Science Portfolio"
   favicon: Images/favicon.png
   back-to-top-navigation: true
-  site-url: https://byuidatascience.github.io/course_work_portfolio/
-  repo-url: https://github.com/byuidatascience/course_work_portfolio
+  site-url: https://melanie584.github.io/
+  repo-url: https://github.com/Melanie584/Melanie584.github.io.git
   issue-url: https://github.com/byuidatascience/course_work_portfolio/issues/new
   repo-actions: [issue]
 
@@ -15,7 +15,7 @@ website:
     left: "Melanie Maldonado 2026©"
     right: 
       - icon: linkedin
-        href: Your_LinkedIn_URL
+        href: www.linkedin.com/in/melanie-maldonado-aa16953a4
 
   navbar:
     background: primary
