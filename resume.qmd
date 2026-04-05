@@ -6,7 +6,7 @@ format: html
 # Melanie Maldonado
 
 ## Education
-Bachelor of Science in Computer Science  
+Bachelor of Science in Computer Science  (in progess)
 Brigham Young University–Idaho
 
 ## Skills
@@ -24,5 +24,4 @@ Brigham Young University–Idaho
 Worked on multiple data science and web development projects, focusing on data cleaning, visualization, and basic machine learning techniques
 
 ## Contact
-Email: your-email@example.com
 GitHub: https://github.com/melanie584
