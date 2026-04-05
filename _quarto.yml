@@ -26,7 +26,7 @@ website:
       - text: "DS250 Projects"
         file: 250_projects.qmd
       - text: "Resume"
-        href: resume.qmd
+        href: resume.html
 
   sidebar:
     - title: "DS 250 Projects"
