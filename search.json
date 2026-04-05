@@ -56,53 +56,103 @@
     "text": "Question|Task 4\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\n\nPROVIDE TABLES THAT HELP ADDRESS THE QUESTIONS AND TASKS (IF APPLICABLE).\n\n\n\ntable example\n# Include and execute your code here\n\n\nNote: Non executing Python Snippets include (3) ``` followed by (3) more ```, each on their own line. These are not single quotes, they are the key left of the number 1 key on the keyboard. The top row can include the language of code that is pasted inbetween the ``` marks.\nNote: These also work in Slack and it is expected they are used for any code shared in that app. No screen shots allowed."
   },
   {
-    "objectID": "250_Projects/resume.html",
-    "href": "250_Projects/resume.html",
-    "title": "Client Report - Baby Names Analysis",
+    "objectID": "250_Projects/project4.html",
+    "href": "250_Projects/project4.html",
+    "title": "Client Report - Can You Predict That?",
     "section": "",
-    "text": "This project looks at a dataset of baby names to see how name popularity changes over time. I wanted to understand which names are more common and how trends shift from year to year. I cleaned the data and grouped it to make it easier to analyze. Then I created a simple visualization to show how name counts change over time. This project helped me practice working with data and finding patterns in a real dataset\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
+    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nfrom lets_plot import *\n# add the additional libraries you need to import for ML here\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\n\n# import your data here using pandas and the URL",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
   },
   {
-    "objectID": "250_Projects/resume.html#elevator-pitch",
-    "href": "250_Projects/resume.html#elevator-pitch",
-    "title": "Client Report - Baby Names Analysis",
-    "section": "",
-    "text": "This project looks at a dataset of baby names to see how name popularity changes over time. I wanted to understand which names are more common and how trends shift from year to year. I cleaned the data and grouped it to make it easier to analyze. Then I created a simple visualization to show how name counts change over time. This project helped me practice working with data and finding patterns in a real dataset\n\n\nRead and format project data\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\ndf = pd.read_csv(\"https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv\")\n\n\nHighlight the Questions and Tasks"
+    "objectID": "250_Projects/project4.html#elevator-pitch",
+    "href": "250_Projects/project4.html#elevator-pitch",
+    "title": "Client Report - Can You Predict That?",
+    "section": "Elevator pitch",
+    "text": "Elevator pitch\nA SHORT (2-3 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS. (Note: this is not a summary of the project, but a summary of the results.)\nA Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client.",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
   },
   {
-    "objectID": "250_Projects/resume.html#questiontask-1",
-    "href": "250_Projects/resume.html#questiontask-1",
-    "title": "Client Report - Baby Names Analysis",
+    "objectID": "250_Projects/project4.html#questiontask-1",
+    "href": "250_Projects/project4.html#questiontask-1",
+    "title": "Client Report - Can You Predict That?",
     "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nAnalyze trends in baby name popularity over time\nIn this analysis, I explored how baby name popularity changes over time. After cleaning the data, I grouped the dataset by year to observe trends. This helped show how the number of names changes across different years. The visualization highlights patterns and makes it easier to see increases or decreases in name usage\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n(\n  ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n)\n\n\n\n   \n       \n       \n       \n   \n   \n          \n   \n   \n\nMy useless chart\n\n\n\n\ntable example\n# Include and execute your code here\nmydat = (df.head(1000)\n    .groupby('year')\n    .sum()\n    .reset_index()\n    .tail(10)\n    .filter([\"year\", \"AK\",\"AR\"])\n)\ndisplay(mydat)\n\n\n\n\n\n\nNot much of a table\n\n\n\nyear\nAK\nAR\n\n\n\n\n96\n2006\n21.0\n183.0\n\n\n97\n2007\n28.0\n153.0\n\n\n98\n2008\n36.0\n212.0\n\n\n99\n2009\n34.0\n179.0\n\n\n100\n2010\n22.0\n196.0\n\n\n101\n2011\n41.0\n148.0\n\n\n102\n2012\n28.0\n140.0\n\n\n103\n2013\n26.0\n134.0\n\n\n104\n2014\n20.0\n114.0\n\n\n105\n2015\n28.0\n121.0"
+    "text": "QUESTION|TASK 1\nCreate 2-3 charts that evaluate potential relationships between the home variables and before1980. Explain what you learn from the charts that could help a machine learning algorithm.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
   },
   {
-    "objectID": "250_Projects/resume.html#questiontask-2",
-    "href": "250_Projects/resume.html#questiontask-2",
-    "title": "Client Report - Baby Names Analysis",
+    "objectID": "250_Projects/project4.html#questiontask-2",
+    "href": "250_Projects/project4.html#questiontask-2",
+    "title": "Client Report - Can You Predict That?",
     "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nCOPY PASTE QUESTION|TASK 2 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
+    "text": "QUESTION|TASK 2\nBuild a classification model labeling houses as being built “before 1980” or “during or after 1980”. Your goal is to reach or exceed 90% accuracy. Explain your final model choice (algorithm, tuning parameters, etc) and describe what other models you tried.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
   },
   {
-    "objectID": "250_Projects/resume.html#questiontask-3",
-    "href": "250_Projects/resume.html#questiontask-3",
-    "title": "Client Report - Baby Names Analysis",
+    "objectID": "250_Projects/project4.html#questiontask-3",
+    "href": "250_Projects/project4.html#questiontask-3",
+    "title": "Client Report - Can You Predict That?",
     "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
+    "text": "QUESTION|TASK 3\nJustify your classification model by discussing the most important features selected by your model. This discussion should include a feature importance chart and a description of the features.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
   },
   {
-    "objectID": "250_Projects/resume.html#questiontask-4",
-    "href": "250_Projects/resume.html#questiontask-4",
-    "title": "Client Report - Baby Names Analysis",
+    "objectID": "250_Projects/project4.html#questiontask-4",
+    "href": "250_Projects/project4.html#questiontask-4",
+    "title": "Client Report - Can You Predict That?",
     "section": "QUESTION|TASK 4",
-    "text": "QUESTION|TASK 4\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
+    "text": "QUESTION|TASK 4\nDescribe the quality of your classification model using 2-3 different evaluation metrics. You also need to explain how to interpret each of the evaluation metrics you use.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
   },
   {
-    "objectID": "250_Projects/resume.html#questiontask-5",
-    "href": "250_Projects/resume.html#questiontask-5",
-    "title": "Client Report - Baby Names Analysis",
-    "section": "QUESTION|TASK 5",
-    "text": "QUESTION|TASK 5\nCOPY PASTE QUESTION|TASK 3 FROM THE PROJECT HERE\ntype your results and analysis here\n\n\nRead and format data\n# Include and execute your code here\n\n\ninclude figures in chunks and discuss your findings in the figure.\n\n\nplot example\n# Include and execute your code here\n# Include and execute your code here\n# (\n#   ggplot(df.head(200), aes(x='name', y='AK')) + geom_bar(stat='identity')\n# )\n\n\n\n\ntable example\n# Include and execute your code here\n# mydat = df.head(1000)\\\n#     .groupby('year')\\\n#     .sum()\\\n#     .reset_index()\\\n#     .tail(10)\\\n#     .filter([\"year\", \"AK\",\"AR\"])\n\n# display(mydat)"
+    "objectID": "250_Projects/project4.html#stretch-questiontask-1",
+    "href": "250_Projects/project4.html#stretch-questiontask-1",
+    "title": "Client Report - Can You Predict That?",
+    "section": "STRETCH QUESTION|TASK 1",
+    "text": "STRETCH QUESTION|TASK 1\nRepeat the classification model using 3 different algorithms. Display their Feature Importance, and Decision Matrix. Explian the differences between the models and which one you would recommend to the Client.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project4.html#stretch-questiontask-2",
+    "href": "250_Projects/project4.html#stretch-questiontask-2",
+    "title": "Client Report - Can You Predict That?",
+    "section": "STRETCH QUESTION|TASK 2",
+    "text": "STRETCH QUESTION|TASK 2\nJoin the dwellings_neighborhoods_ml.csv data to the dwelling_ml.csv on the parcel column to create a new dataset. Duplicate the code for the stretch question above and update it to use this data. Explain the differences and if this changes the model you recomend to the Client.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
+  },
+  {
+    "objectID": "250_Projects/project4.html#stretch-questiontask-3",
+    "href": "250_Projects/project4.html#stretch-questiontask-3",
+    "title": "Client Report - Can You Predict That?",
+    "section": "STRETCH QUESTION|TASK 3",
+    "text": "STRETCH QUESTION|TASK 3\nCan you build a model that predicts the year a house was built? Explain the model and the evaluation metrics you would use to determine if the model is good.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
+    "crumbs": [
+      "DS250 Projects",
+      "Project 4"
+    ]
   },
   {
     "objectID": "250_Projects/project6.html",
@@ -322,103 +372,46 @@
     ]
   },
   {
-    "objectID": "250_Projects/project4.html",
-    "href": "250_Projects/project4.html",
-    "title": "Client Report - Can You Predict That?",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
     "section": "",
-    "text": "Show the code\nimport pandas as pd \nimport numpy as np\nfrom lets_plot import *\n# add the additional libraries you need to import for ML here\n\nLetsPlot.setup_html(isolated_frame=True)\nShow the code\n# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html\n\n# Include and execute your code here\n\n# import your data here using pandas and the URL",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "text": "Bachelor of Science in Computer Science\nBrigham Young University–Idaho\n\n\n\n\nPython\nPolars\nData Analysis\nMachine Learning (basic)\nWeb Development (HTML, CSS, JavaScript)\n\n\n\n\n\nDS 250 Data Projects\nWeb-based game project using Phaser\n\n\n\n\nWorked on multiple data science and web development projects, focusing on data cleaning, visualization, and basic machine learning techniques\n\n\n\nEmail: your-email@example.com GitHub: https://github.com/melanie584"
   },
   {
-    "objectID": "250_Projects/project4.html#elevator-pitch",
-    "href": "250_Projects/project4.html#elevator-pitch",
-    "title": "Client Report - Can You Predict That?",
-    "section": "Elevator pitch",
-    "text": "Elevator pitch\nA SHORT (2-3 SENTENCES) PARAGRAPH THAT DESCRIBES KEY INSIGHTS TAKEN FROM METRICS IN THE PROJECT RESULTS THINK TOP OR MOST IMPORTANT RESULTS. (Note: this is not a summary of the project, but a summary of the results.)\nA Client has requested this analysis and this is your one shot of what you would say to your boss in a 2 min elevator ride before he takes your report and hands it to the client.",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Resume",
+    "section": "",
+    "text": "Bachelor of Science in Computer Science\nBrigham Young University–Idaho"
   },
   {
-    "objectID": "250_Projects/project4.html#questiontask-1",
-    "href": "250_Projects/project4.html#questiontask-1",
-    "title": "Client Report - Can You Predict That?",
-    "section": "QUESTION|TASK 1",
-    "text": "QUESTION|TASK 1\nCreate 2-3 charts that evaluate potential relationships between the home variables and before1980. Explain what you learn from the charts that could help a machine learning algorithm.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "objectID": "resume.html#skills",
+    "href": "resume.html#skills",
+    "title": "Resume",
+    "section": "",
+    "text": "Python\nPolars\nData Analysis\nMachine Learning (basic)\nWeb Development (HTML, CSS, JavaScript)"
   },
   {
-    "objectID": "250_Projects/project4.html#questiontask-2",
-    "href": "250_Projects/project4.html#questiontask-2",
-    "title": "Client Report - Can You Predict That?",
-    "section": "QUESTION|TASK 2",
-    "text": "QUESTION|TASK 2\nBuild a classification model labeling houses as being built “before 1980” or “during or after 1980”. Your goal is to reach or exceed 90% accuracy. Explain your final model choice (algorithm, tuning parameters, etc) and describe what other models you tried.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "objectID": "resume.html#projects",
+    "href": "resume.html#projects",
+    "title": "Resume",
+    "section": "",
+    "text": "DS 250 Data Projects\nWeb-based game project using Phaser"
   },
   {
-    "objectID": "250_Projects/project4.html#questiontask-3",
-    "href": "250_Projects/project4.html#questiontask-3",
-    "title": "Client Report - Can You Predict That?",
-    "section": "QUESTION|TASK 3",
-    "text": "QUESTION|TASK 3\nJustify your classification model by discussing the most important features selected by your model. This discussion should include a feature importance chart and a description of the features.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "objectID": "resume.html#experience",
+    "href": "resume.html#experience",
+    "title": "Resume",
+    "section": "",
+    "text": "Worked on multiple data science and web development projects, focusing on data cleaning, visualization, and basic machine learning techniques"
   },
   {
-    "objectID": "250_Projects/project4.html#questiontask-4",
-    "href": "250_Projects/project4.html#questiontask-4",
-    "title": "Client Report - Can You Predict That?",
-    "section": "QUESTION|TASK 4",
-    "text": "QUESTION|TASK 4\nDescribe the quality of your classification model using 2-3 different evaluation metrics. You also need to explain how to interpret each of the evaluation metrics you use.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project4.html#stretch-questiontask-1",
-    "href": "250_Projects/project4.html#stretch-questiontask-1",
-    "title": "Client Report - Can You Predict That?",
-    "section": "STRETCH QUESTION|TASK 1",
-    "text": "STRETCH QUESTION|TASK 1\nRepeat the classification model using 3 different algorithms. Display their Feature Importance, and Decision Matrix. Explian the differences between the models and which one you would recommend to the Client.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project4.html#stretch-questiontask-2",
-    "href": "250_Projects/project4.html#stretch-questiontask-2",
-    "title": "Client Report - Can You Predict That?",
-    "section": "STRETCH QUESTION|TASK 2",
-    "text": "STRETCH QUESTION|TASK 2\nJoin the dwellings_neighborhoods_ml.csv data to the dwelling_ml.csv on the parcel column to create a new dataset. Duplicate the code for the stretch question above and update it to use this data. Explain the differences and if this changes the model you recomend to the Client.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
-  },
-  {
-    "objectID": "250_Projects/project4.html#stretch-questiontask-3",
-    "href": "250_Projects/project4.html#stretch-questiontask-3",
-    "title": "Client Report - Can You Predict That?",
-    "section": "STRETCH QUESTION|TASK 3",
-    "text": "STRETCH QUESTION|TASK 3\nCan you build a model that predicts the year a house was built? Explain the model and the evaluation metrics you would use to determine if the model is good.\ntype your results and analysis here\n\n\nShow the code\n# Include and execute your code here",
-    "crumbs": [
-      "DS250 Projects",
-      "Project 4"
-    ]
+    "objectID": "resume.html#contact",
+    "href": "resume.html#contact",
+    "title": "Resume",
+    "section": "",
+    "text": "Email: your-email@example.com GitHub: https://github.com/melanie584"
   },
   {
     "objectID": "Templates/ds250_project_template_clean.html",
